@@ -1,0 +1,45 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+.nav_mailmagazine a { background-position: -658px -17px; }
+
+h2 { background-image: url(../img/common/title_mailmagazine.png); }
+
+
+/* ------------------------------------
+ * MAIL MAGAZINE
+ * ------------------------------------ */
+
+.cs {
+	padding: 100px 0;
+	text-align: center;
+	font-size: 150%;
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

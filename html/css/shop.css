@@ -1,0 +1,201 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+.nav_shop a { background-position: -423px -17px; }
+
+h2 { background-image: url(../img/common/title_shop.png); }
+
+h3 { font-size: 115%; text-align: center; }
+
+.localNav { padding: 30px 0 0; border-top: solid 1px #e2e2e2; }
+
+.localNav li { border-bottom: none !important; margin: 0 !important; }
+
+
+/* ------------------------------------
+ * SHOP
+ * ------------------------------------ */
+
+.inner dt {
+	float: left;
+	width: 320px;
+}
+
+.inner dt img {
+	display: block;
+	width: 320px;
+}
+
+.inner dd {
+	padding-left: 350px;
+}
+
+a.item,
+span.item {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 108%;
+}
+span.item {
+	color: #5f7840;
+}
+
+.price,
+.note {
+	display: block;
+}
+.price {
+	margin-bottom: 15px;
+}
+
+
+
+/* DETAIL */
+
+#detail .btnArea {
+	margin-top: 50px;
+}
+
+
+/* LIST */
+
+#list li {
+	margin-bottom: 30px;
+	border-bottom: solid 1px #e2e2e2;
+}
+#list li:last-child {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+#list li dt {
+	width: 160px;
+}
+
+#list li dt img {
+	display: block;
+	width: 160px;
+}
+
+#list li dd {
+	padding-left: 190px;
+}
+
+#list li dd .btnArea {
+	margin: 10px 0 20px;
+	text-align: right;
+}
+
+#list li dd .btnArea a.btn {
+	margin: 10px 0;
+}
+
+#list li dd a.item {
+	margin-bottom: 3px;
+}
+
+#list li dd .price {
+	margin-bottom: 5px;
+}
+
+#list li dd .note {
+	line-height: 1.4;
+	font-size: 90%;
+}
+
+
+/* TOKUTEI & PRIVACY & INQUIRY */
+
+
+#tokutei h3,
+#policy h3 {
+	padding-top: 0;
+}
+
+#tokutei dl + h3,
+#policy dl + h3 {
+	margin-top: 50px;
+}
+
+#tokutei dl,
+#policy dl {
+	margin: 20px 0;
+}
+
+#tokutei dt,
+#policy dt {
+	float: none;
+	width: auto;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+#tokutei dd,
+#policy dd {
+	margin-bottom: 20px;
+	padding-left: 1em;
+}
+
+#tokutei dd strong {
+	display: block;
+	font-weight: bold;
+	color: #5f7840;
+}
+
+#tokutei dd ul,
+#policy dd ul {
+	margin: 10px 0;
+}
+
+#tokutei dd li,
+#policy dd li {
+	padding: 0 0 0 1em;
+	text-indent: -1em;
+}
+#tokutei dd li {
+	margin-bottom: 10px;
+}
+#tokutei dd li:last-child {
+	margin-bottom: 0;
+}
+
+#tokutei dd a,
+#policy dd a {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#tokutei .localNav li.shopNav_tokutei a,
+#policy .localNav li.shopNav_policy a {
+	color: #41433f;
+	text-decoration: none;
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.inner dl:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Raleway|Varela";
+
+#menu-box {
+	/*margin-top:10px;*/
+}
+
+#menu{
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+}
+#menu li{
+  display: block;
+  float: left;
+/*  width: 12.5%;*/
+/*  width: 25%;*/
+  margin: 0;
+  padding: 0; }
+#menu li a{
+  display: block;
+  /*padding: 12px 0 10px;
+  background: #333;*/
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+}
+#menu li a:hover{
+  /*background: #444;*/
+}
+#toggle{
+ display: none;
+}
+@media only screen and (max-width: 768px) {
+    #menu li{
+    width: 48%;
+    border-bottom: 1px solid #c1c1c1;
+	margin:1%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #menu{
+    display: none;
+  }
+  #menu li{
+    width: 100%;
+	margin:0;
+  }
+
+	#menu li a {
+		padding: 12px 0 10px;
+	}
+
+  #toggle{
+	font-family: /*'Raleway'*/'Varela', sans-serif;
+    display: block;
+    position: relative;
+    width: 100%;
+    background: #91ba60;
+  }
+  #toggle a{
+	font-family: /*'Raleway'*/'Varela', sans-serif;
+    display: block;
+    position: relative;
+    padding: 12px 0 10px;
+    border-bottom: 1px solid #c1c1c1;
+    color: #fff;
+	letter-spacing:0.2em;
+    text-align: center;
+    text-decoration: none;
+  }
+  #toggle:before{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    background: #fff;
+  }
+  #toggle a:before, #toggle a:after{
+    display: block;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 4px;
+    background: #91ba60;
+  }
+  #toggle a:before{
+    margin-top: -6px;
+  }
+  #toggle a:after{
+    margin-top: 2px;
+  }
+}

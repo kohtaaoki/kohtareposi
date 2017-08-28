@@ -1,0 +1,28 @@
+<p class="pageTop"><a href="#">TOP</a></p>
+
+<!-- FOOTER -->
+<footer><small>copyright&copy;2009-2016 seventh avenue. AllRight Reserves.</small></footer>
+<!-- //FOOTER -->
+
+<script type="text/javascript" src="/js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="/js/pagetop.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+$(function(){
+  $("#toggle").click(function(){
+    $("#menu").slideToggle();
+    return false;
+  });
+  $(window).resize(function(){
+    var win = $(window).width();
+    var p = 480;
+    if(win > p){
+      $("#menu").show();
+    } else {
+      $("#menu").hide();
+    }
+  });
+});
+</script>
+
+<!--[if IE 6]><script src="/js/DD_belatedPNG_0.0.8a-min.js"></script><script>DD_belatedPNG.fix('img,a,h1,h2,span');</script><![endif]-->

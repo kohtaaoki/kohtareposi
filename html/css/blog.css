@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+h2 { background-image: url(../img/common/title_blog.png); }
+
+.talentNav { margin-bottom: 30px; }
+
+.talentNav_blog a { background-position: -102px -114px; }
+
+
+/* ------------------------------------
+ * BLOG
+ * ------------------------------------ */
+
+h4 {
+	padding: 0 0 20px;
+	font-weight: bold;
+	font-size: 108%;
+}
+h4 time {
+	font-size: 93%;
+}
+
+
+/* LEFT */
+
+.blogNav { 
+	margin-bottom: 45px;
+}
+
+.blogNav ul {
+	margin-left: -10px;
+}
+	
+.blogNav li {
+	float: left;
+	width: 112px;
+}
+
+.blogNav li a {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 100px;
+	height: 36px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #dfdfdf;
+	background-repeat: no-repeat;
+}
+.blogNav_matsushima a { background-image: url(../img/blog/blogNav_matsushima.png); }
+.blogNav_fujisawa a { background-image: url(../img/blog/blogNav_fujisawa.png); }
+.blogNav_ito a { background-image: url(../img/blog/blogNav_ito.png); }
+.blogNav_staff a { background-image: url(../img/blog/blogNav_staff.png); }
+.blogNav li a:hover, .blogNav li a.select { border-color: #b1baa6; }
+.blogNav_matsushima a:hover, .blogNav_matsushima a.select { background-position: -100px 0; }
+.blogNav_fujisawa a:hover, .blogNav_fujisawa a.select { background-position: -100px 0 }
+.blogNav_ito a:hover, .blogNav_ito a.select { background-position: -100px 0 }
+.blogNav_staff a:hover, .blogNav_staff a.select { background-position: -100px 0 }
+
+
+#month {
+	overflow: hidden;
+	zoom: 1;
+	width: 214px;
+	margin-bottom: 5px;
+}
+
+#month li {
+	position: relative;
+	display: block;
+	float: left;
+}
+#month li.selectMonth {
+	width: 174px;
+	text-align: center;
+	line-height: 35px;
+}
+#month li.prevCal,
+#month li.nextCal {
+	width: 20px;
+}
+
+#month a,
+#month span {
+	height: 45px;
+	color: #878787;
+}
+#month li.selectMonth a,
+#month li.selectMonth span {
+	display: table-cell;
+	line-height: 1;
+	vertical-align: middle;
+	width: 174px;
+	text-decoration: none;
+	text-align: center;
+	
+}
+#month li.selectMonth a strong,
+#month li.selectMonth span strong {
+	display: block;
+	padding-top: 3px;
+	font-size: 220%;
+}
+#month li.prevCal a,
+#month li.nextCal a {
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 20px;
+}
+#month li.prevCal a {
+	background: url(../img/parts/arrowPrev.png) no-repeat left center;
+}
+#month li.nextCal a {
+	background: url(../img/parts/arrowNext.png) no-repeat right center;
+}
+#month li.prevCal a:hover,
+#month li.nextCal a:hover {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+#calendar {
+	margin-bottom: 40px;
+}
+
+#calendar table {
+	width: 100%;
+	color: #878787;
+	font-size: 96%;
+}
+
+#calendar table td {
+	margin: 0;
+	height: 34px;
+	text-align:center;
+}
+
+#calendar table td a {
+	display: inline-block;
+	line-height: 1.6em;
+	width: 1.6em;
+	padding: 3px;
+	border-radius: 50%;
+	background: #e8f5de;
+	color: #5f7840;
+	text-align: center;
+	text-decoration: none;
+}
+#calendar table td a:hover {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+#calendar table td .today {
+	font-weight: bold;
+	color: #5f7840;
+}
+
+#archive li {
+	list-style-type: disc;
+	list-style-position: outside;
+	margin: 0 0 0 1em;
+	padding-bottom: 5px;
+	color: #b9b9b9;
+}
+
+/* RIGHT */
+
+#contentsRight > ul li {
+	margin-bottom: 48px;
+	padding-bottom: 50px;
+	border-bottom: solid 1px #e2e2e2;
+}
+#contentsRight > ul li:last-child {
+	margin-bottom: 0;
+}
+
+#contentsRight > ul li .photo img {
+	padding: 15px 0;
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.blogNav:after,
+#month:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

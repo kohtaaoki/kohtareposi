@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+h2 { background-image: url(../img/common/title_biography.png); }
+
+.talentNav_biography a { background-position: -102px -76px; }
+
+
+/* ------------------------------------
+ * BIOGRAPHY
+ * ------------------------------------ */
+
+h4 {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 110px;
+	height: 22px;
+	margin-bottom: 28px;
+	background-image: url(../img/biography/cateTitle.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	h4 {
+		background-image: url(../img/biography/cateTitle@2x.png);
+		background-size: 93px 110px;
+		-webkit-background-size: 93px 110px;
+		-moz-background-size: 93px 110px;
+	}
+}
+
+
+#tv h4 { background-position: 0 0; }
+#movie h4 { background-position: 0 -22px; }
+#cm h4 { background-position: 0 -44px; }
+#stage h4 { background-position: 0 -66px; }
+#mvpv h4 { background-position: 0 -88px; }
+
+
+/* RIGHT */
+
+.cateNav {
+	margin: 2px 0 58px;
+	border-left: solid 1px #d0d3cc;
+}
+
+.cateNav li {
+	float: left;
+	border-right: solid 1px #d0d3cc;
+}
+
+.cateNav li a {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	height: 10px;
+	padding: 5px 0;
+	background-image: url(../img/biography/cateNav.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	.cateNav li a {
+		background-image: url(../img/biography/cateNav@2x.png);
+		background-size: 396px 10px;
+		-webkit-background-size: 396px 10px;
+		-moz-background-size: 396px 10px;
+	}
+}
+
+.cateNav li.tv a { width: 59px; background-position: 0 5px; }
+.cateNav li.movie a { width: 89px; background-position: -59px 5px; }
+.cateNav li.cm a { width: 63px; background-position: -148px 5px; }
+.cateNav li.stage a { width: 92px; background-position: -211px 5px; }
+.cateNav li.mvpv a { width: 93px; background-position: -303px 5px; }
+
+.cateNav li a:hover {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+#contentsRight > ul > li {
+	margin: 0 0 55px;
+	padding: 0 0 50px;
+	border-bottom: solid 1px #e2e2e2;
+}
+#contentsRight > ul > li:last-child {
+	margin-bottom: 0;
+	padding-bottom: 100%;
+	border-bottom: none;
+}
+
+#contentsRight li li {
+	list-style-type: disc;
+	list-style-position: outside;
+	margin: 0 0 0 1.2em;
+	padding: 8px 0;
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.cateNav ul:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}
+
+@media screen and (max-width:767px) {
+	.cateNav {
+		border-left:none;
+	}
+
+	.cateNav ul{
+		width:401px;
+		margin:0 auto;
+	}
+}
+@media screen and (max-width:481px) {
+
+	.cateNav ul{
+		width:214px;
+		padding:0;
+		margin:2% auto;
+	}
+}

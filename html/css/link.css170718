@@ -1,0 +1,88 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+.nav_link a { background-position: -827px -17px; }
+
+h2 { background-image: url(../img/common/title_link.png); }
+
+
+/* ------------------------------------
+ * LINK
+ * ------------------------------------ */
+
+.inner li {
+	margin-bottom: 20px;
+}
+
+.inner li a {
+	display: table;
+	color: #41433f;
+}
+.inner li a:hover {
+	color: color: #878787;
+}
+
+.inner li a img,
+.inner li a span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.inner li a img {
+	width: 170px;
+}
+.inner li a span {
+	padding-left: 20px;
+}
+
+.inner li a:hover img {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+@media screen and (max-width:767px) {
+	.inner li a img,
+	.inner li a span,
+	.inner li a {
+		display:block;
+		margin:0 auto;
+	}
+
+	.inner li a span{
+		margin-top:3%;
+		padding-left:0;
+		text-align:center;
+	}
+
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.inner li a:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

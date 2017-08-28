@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+
+h2 { background-image: url(../img/common/title_link.png); }
+
+
+/* ------------------------------------
+ * LINK
+ * ------------------------------------ */
+
+.inner li {
+	margin-bottom: 20px;
+}
+
+.inner li  {
+	display: table;
+	}
+.inner li a:hover {
+	}
+
+.inner li img,
+.inner li span {
+	display: table-cell;
+	vertical-align: middle;
+}
+.inner li img {
+	width: 170px;
+}
+.inner li span {
+	padding-left: 20px;
+}
+.inner li span .linkname {
+	padding-left: 0px;
+}
+
+.inner li a:hover img {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+@media screen and (max-width:767px) {
+	.inner li {
+		display:block;
+		text-align:center;
+	}
+
+	.inner li img,
+	.inner li span {
+		display:block;
+		margin:2% auto;
+	}
+
+	.inner li span a {
+		word-wrap:break-word;
+	}
+}
+
+h4 {
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 110px;
+	height: 22px;
+	margin-bottom: 0px;
+	background-image: url(../img/biography/cateTitle.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	h4 {
+		background-image: url(../img/biography/cateTitle@2x.png);
+		background-size: 93px 110px;
+		-webkit-background-size: 93px 110px;
+		-moz-background-size: 93px 110px;
+	}
+}
+
+
+h4.tv { background-position: 0 0; }
+h4.movie { background-position: 0 -22px; }
+h4.cm { background-position: 0 -44px; }
+h4.stage { background-position: 0 -66px; }
+h4.mvpv { background-position: 0 -88px; }
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.inner li a:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

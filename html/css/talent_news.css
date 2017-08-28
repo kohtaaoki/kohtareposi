@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+h2 { background-image: url(../img/common/title_news.png); }
+
+.talentNav_talentNews a { background-position: -102px -38px; }
+
+
+/* ------------------------------------
+ * TALENT NEWS
+ * ------------------------------------ */
+
+h4 {
+	padding: 0 0 20px;
+	font-weight: bold;
+	font-size: 108%;
+}
+h4 time {
+	font-size: 93%;
+}
+
+
+/* RIGHT */
+
+#contentsRight > ul li {
+	margin-bottom: 48px;
+	padding-bottom: 50px;
+	border-bottom: solid 1px #e2e2e2;
+}
+#contentsRight > ul li:last-child {
+	margin-bottom: 0;
+}
+
+#contentsRight > ul li .photo img {
+	padding: 15px 0;
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

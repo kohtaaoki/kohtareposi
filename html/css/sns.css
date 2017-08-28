@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+
+h2 { background-image: url(../img/common/title_sns.png); }
+
+
+/* ------------------------------------
+ * PROFILE
+ * ------------------------------------ */
+
+.inner li {
+	margin-bottom: 20px;
+	clear:both;
+	height auto;
+	overflow:hidden;
+}
+
+.inner li  {
+	/*display: table;*/
+	}
+.inner li a:hover {
+	}
+
+.inner li img,
+.inner li span {
+	/*display: table-cell;*/
+	vertical-align: middle;
+}
+.inner li img {
+	width: 170px;
+}
+.inner li span {
+	padding-left: 20px;
+}
+.inner li span .linkname {
+	padding-left: 0px;
+}
+
+.inner li a:hover img {
+	opacity:0.7;
+	filter: alpha(opacity=70);        /* ie lt 8 */
+	-ms-filter: "alpha(opacity=70)";  /* ie 8 */
+	-moz-opacity:0.7;                 /* FF lt 1.5, Netscape */
+	-khtml-opacity: 0.7;              /* Safari 1.x */
+	zoom:1;
+}
+
+
+.inner li span {
+	padding-left:0;
+}
+.cateIcon {
+	width:119px;
+	height:26px;
+}
+
+ul {
+	width:60%;
+	margin:0 auto;
+	height:auto;
+	overflow:hidden;
+}
+
+ul li {
+	margin:3% auto;
+}
+
+
+ul li .icon {
+	width:30%;
+	float:left;
+}
+
+ul li .icon img {
+	width:95%;
+	margin:0 auto;
+}
+
+ul li .txt {
+	width:70%;
+	float:left;
+}
+
+ul li .txt a {
+	display:block;
+}
+
+@media screen and (max-width:767px) {
+	ul {
+		width:95%;
+	}
+
+	ul li .icon,
+	ul li .txt {
+		float:none;
+		width:90%;
+		margin:1% auto;
+	}
+
+	ul li .icon img {
+		display:block;
+		width:50%;
+	}
+
+	ul li .txt a {
+		text-align:center;
+		word-wrap: break-word;
+	}
+
+	span {
+		text-align:center;
+	}
+
+	span.fujisawa,
+	span.ito,
+	span.matsushima {
+		display:block;
+		margin:5% auto;
+	}
+
+	span.linkname {
+		display:block;
+	}
+
+	.cateIcon {
+		margin:0 auto;
+	}
+
+}
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+#list .inner > ul:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+.nav_fanmail a { background-position: -194px -17px; }
+
+h2 { background-image: url(../img/common/title_fanmail.png); }
+
+
+/* ------------------------------------
+ * FAN MAIL
+ * ------------------------------------ */
+
+.inner dl {
+	margin-top: 30px;
+}
+
+.inner dt {
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.inner dd {
+	margin-bottom: 50px;
+	padding-left: 1em;
+}
+
+.inner dd span {
+	display: block;
+	margin-bottom: 10px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+
+
+/* FORM */
+
+#form table {
+	width: 660px;
+}
+
+#form th {
+	width: 120px;
+}
+#form td {
+	width: 500px;
+}
+
+form input#nickname,
+form input#email {
+	width: 300px;
+}
+
+form textarea {
+	width: 500px;
+	height: 200px;
+}
+
+.regist p {
+	padding: 50px 0;
+	text-align: center;
+}
+
+
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+.clearfix:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

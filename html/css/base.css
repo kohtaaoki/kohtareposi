@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * BASE
+ * ------------------------------------ */
+
+html,body{
+     height: 100%;
+}
+ 
+/*--- BODY ------------------*/
+ 
+body {
+    line-height: 1.6;
+	background-color: #fff;
+	font-family: 游ゴシック体, 'Yu Gothic', YuGothic, メイリオ, Meiryo, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+	color: #41433f;
+	font-size: 13px;
+	-webkit-text-size-adjust: 100%;
+    text-align: center;
+	zoom: 1;
+	margin:0;
+}
+ 
+ 
+/*--- LAYOUT ------------------*/
+ 
+#container {
+	position: relative;
+	text-align: left;
+}
+
+
+header {
+	position: relative;
+	width: 910px;
+	margin: 0 auto;
+	background: url(../img/common/bg_header.jpg) no-repeat left top;
+}
+
+
+
+#contents {
+	position: relative;
+	border-top: solid 1px #e6ece3;
+	background-image: -webkit-gradient(
+                  linear
+                , left top
+                , right top
+                , from(#d1dfd0)
+                , color-stop(0.20, #ffffff)
+                , color-stop(0.80, #ffffff)
+                , to(#d1dfd0));
+
+
+	background: -moz-linear-gradient(left,  #d1dfd0 0%, #ffffff 19%, #ffffff 20%, #ffffff 80%, #d1dfd0 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(left,  #d1dfd0 0%,#ffffff 19%,#ffffff 20%,#ffffff 80%,#d1dfd0 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right,  #d1dfd0 0%,#ffffff 19%,#ffffff 20%,#ffffff 80%,#d1dfd0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1dfd0', endColorstr='#d1dfd0',GradientType=1 ); /* IE6-9 */
+
+
+}
+
+article {
+	width: 910px;
+	margin: 0 auto;
+	padding: 0 0 50px;
+}
+
+
+
+footer {
+	margin: 0 auto;
+	padding: 16px 0 22px;
+	border-top: solid 1px #e6ece3;
+	text-align: center;
+}
+
+footer small {
+	font-size: 77%;
+	color: #858585;
+}
+ 
+.wrap {
+    width: 100%;
+    zoom: 1;
+	overflow: hidden;
+}
+ 
+ 
+/*--- clearfix ------------------*/
+ 
+.clearfix {
+    display: inline-block;
+    min-height: 1%;
+}
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+.clearfix {
+    display: block;
+}
+/* End hide from IE-Mac */
+ 
+.clearfix:after,
+.wrap:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+    font-size: 0.1em;
+    line-height: 0;
+}
+ 
+
+/*--- GOOGLE FONT ------------------*/
+
+.font01 { font-family: 'Oswald', sans-serif; font-weight: 400; }
+.font01_light { font-family: 'Oswald', sans-serif; font-weight: 300; }
+.font01_bold { font-family: 'Oswald', sans-serif; font-weight: 700; }
+
+
+/*--- FONT SIZE ------------------*/
+ 
+.text9 {
+    font-size: 77%;
+}
+.text10 {
+    font-size: 85%;
+}
+.text11 {
+    font-size: 93%;
+}
+.text12 {
+    font-size: 100%;
+}
+.text13 {
+    font-size: 108%;
+}
+.text14 {
+    font-size: 116%;
+}
+.text15 {
+    font-size: 123.1%;
+}
+.text16 {
+    font-size: 131%;
+}
+.text17 {
+    font-size: 138.5%;
+}
+.text18 {
+    font-size: 146.5%;
+}
+.text19 {
+    font-size: 153.9%;
+}
+.text20 {
+    font-size: 161.6%;
+}
+.text21 {
+    font-size: 167%;
+}
+.text22 {
+    font-size: 174%;
+}
+.text23 {
+    font-size: 182%;
+}
+.text24 {
+    font-size: 189%;
+}
+.text25 {
+    font-size: 197%;
+}
+
+
+@media screen and (max-width:767px) {
+	#container {
+		width:100%;
+	}
+
+	header {
+		width:100%;
+	}
+
+	article {
+		width:100%;
+	}
+
+	ul {
+		padding:0;
+	}
+}

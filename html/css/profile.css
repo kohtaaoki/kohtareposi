@@ -1,0 +1,323 @@
+@charset "UTF-8";
+/*\*/
+ 
+/*------------------------------
+サイト名：seventh avenue
+作成日：2016.04.28
+修正日：2016.04.28
+ガイドライン：Ver.02
+製作者：株式会社エムアップ
+------------------------------*/
+
+
+/* ------------------------------------
+ * OVERRIDE
+ * ------------------------------------ */
+
+.nav_profile a { background-position: -86px -17px; }
+
+h2 { background-image: url(../img/common/title_profile.png); }
+
+
+
+/* ------------------------------------
+ * PROFILE
+ * ------------------------------------ */
+
+/* LEFT */
+
+#detail .talentNav { margin-bottom: 30px; }
+
+.laNav ul {
+	margin-left: -10px;
+}
+	
+.laNav li {
+	float: left;
+	width: 112px;
+}
+
+.laNav li a {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 102px;
+	height: 38px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	background-image: url(../img/common/laNav.png);
+	background-repeat: no-repeat; 
+}
+
+
+
+.laNav_english a { background-position: 0 0; }
+.laNav_chinese a { background-position: 0 -38px; }
+.laNav_japanese a { background-position: 0 -76px; }
+.laNav_english a:hover { background-position: -102px 0; }
+.laNav_chinese a:hover { background-position: -102px -38px; }
+.laNav_japanese a:hover { background-position: -102px -76px; }
+
+.laNav { 
+	margin-bottom: 45px;
+}
+
+.laNav ul {
+	margin-left: -10px;
+}
+	
+.laNav li {
+	float: left;
+	width: 112px;
+}
+
+.laNav li a {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 100px;
+	height: 36px;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: solid 1px #dfdfdf;
+	background-image: url(../img/common/laNav.png);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	.laNav li a {
+		background-image: url(../img/common/laNav@2x.png);
+		background-size: 200px 108px;
+		-webkit-background-size: 200px 108px;
+		-moz-background-size: 200px 108px;
+	}
+}
+
+
+.laNav_english a { background-position: 0 0; }
+.laNav_chinese a { background-position: 0 -36px; }
+.laNav_japanese a { background-position: 0 -72px; }
+.laNav li a:hover { border-color: #b1baa6; }
+.laNav_english a:hover { background-position: -100px 0; }
+.laNav_chinese a:hover { background-position: -100px -36px; }
+.laNav_japanese a:hover { background-position: -100px -72px; }
+
+
+/* RIGHT */
+
+#detail .talentNav_profile a { background-position: -102px 0; }
+
+#detail #contentsRight dt {
+	float: left;
+	width: 240px;
+}
+
+
+#detail #contentsRight dd {
+	margin-bottom: 20px;
+	padding-left: 270px;
+}
+
+@media screen and (max-width:767px) {
+	#detail #contentsRight dd,
+	#detail #contentsRight dt {
+		float:none;
+		width:90%;
+		margin:0 auto;
+	}
+
+	#detail #contentsRight dd {
+		padding-left:0;
+	}
+}
+
+
+#detail #contentsRight dd ul {
+	border-top: solid 1px #e2e2e2;
+}
+
+#detail #contentsRight dd li {
+	padding: 12px 0;
+	border-bottom: solid 1px #e2e2e2;
+}
+
+#detail #contentsRight dd li span {
+	font-weight: bold;
+	color: #82a15d;
+}
+
+#detail #contentsRight dd .cs {
+	padding: 160px 0;
+	text-align: center;
+	font-size: 150%;
+}
+
+
+/* ------------------------------------
+ * LIST
+ * ------------------------------------ */
+ 
+#list .inner > ul {
+	zoom: 1;
+	overflow: hidden;
+	width: 750px;
+	margin: 0 auto 10px;
+}
+
+#list .inner > ul > li {
+	float: left;
+	width: 250px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+@media screen and (max-width:767px) {
+	#list .inner ul {
+		width:100%;
+	}
+
+	#list .inner ul li {
+		float:none;
+		margin:0 auto 25%;
+	}
+}
+
+#list .inner li > div {
+	width: 200px;
+	margin: 0 25px;
+}
+
+#list .inner .profNav li {
+	width: 200px;
+	margin-bottom: 10px;
+}
+	
+#list .inner .profNav li a {
+	display: block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	line-height: 0;
+	width: 200px;
+	height: 38px;
+	background-image: url(../img/common/profileNav.gif);
+	background-repeat: no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.5),
+only screen and (min-device-pixel-ratio:1.5),
+only screen and (-webkit-min-device-pixel-ratio:2),
+only screen and (min-device-pixel-ratio:2) {
+	#list .inner .profNav li a {
+		background-image: url(../img/common/profileNav@2x.png);
+		background-size: 400px 190px;
+		-webkit-background-size: 400px 190px;
+		-moz-background-size: 400px 190px;
+	}
+}
+
+
+
+
+/*.profNav_profile a { background-position: 0 0; }
+.profNav_talentNews a { background-position: 0 -38px; }
+.profNav_biography a { background-position: 0 -76px; }
+.profNav_blog a { background-position: 0 -114px; }
+#list .inner li:nth-child(2n) li.profNav_profile a { background-position: -200px 0; }
+#list .inner li:nth-child(2n) li.profNav_talentNews a { background-position: -200px -38px; }
+#list .inner li:nth-child(2n) li.profNav_biography a { background-position: -200px -76px; }
+#list .inner li:nth-child(2n) li.profNav_blog a { background-position: -200px -114px; }
+.profNav_profile a:hover { background-position: -200px 0; }
+.profNav_talentNews a:hover { background-position: -200px -38px; }
+.profNav_biography a:hover { background-position: -200px -76px; }
+.profNav_blog a:hover { background-position: -200px -114px; }
+#list .inner li:nth-child(2n) li.profNav_profile a:hover { background-position: 0 0; }
+#list .inner li:nth-child(2n) li.profNav_talentNews a:hover { background-position: 0 -38px; }
+#list .inner li:nth-child(2n) li.profNav_biography a:hover { background-position: 0 -76px; }
+#list .inner li:nth-child(2n) li.profNav_blog a:hover { background-position: 0 -114px; }*/
+
+.profNav_profile a { background-position: -200px 0; }
+.profNav_talentNews a { background-position: -200px -38px; }
+.profNav_biography a { background-position: -200px -76px; }
+.profNav_blog a { background-position: -200px -114px; }
+.profNav_insta a { background-position: -200px -152px; }
+/*#list .inner .talent_one li:first-child li.profNav_profile a { background-position: -200px 0; }
+#list .inner .talent_one li:first-child li.profNav_talentNews a { background-position: -200px -38px; }
+#list .inner .talent_one li:first-child li.profNav_biography a { background-position: -200px -76px; }
+#list .inner .talent_one li:first-child li.profNav_blog a { background-position: -200px -114px; }
+#list .inner .talent_one li:first-child li.profNav_insta a { background-position: -200px -152px; }*/
+.profNav_profile a:hover { background-position: 0 0; }
+.profNav_talentNews a:hover { background-position: 0 -38px; }
+.profNav_biography a:hover { background-position: 0 -76px; }
+.profNav_blog a:hover { background-position: 0 -114px; }
+.profNav_insta a:hover { background-position: 0 -152px; }
+/*#list .inner .talent_one li:first-child li.profNav_profile a:hover { background-position: 0 0; }
+#list .inner .talent_one li:first-child li.profNav_talentNews a:hover { background-position: 0 -38px; }
+#list .inner .talent_one li:first-child li.profNav_biography a:hover { background-position: 0 -76px; }
+#list .inner .talent_one li:first-child li.profNav_blog a:hover { background-position: 0 -114px; }
+#list .inner .talent_one li:first-child li.profNav_insta a:hover { background-position: 0 -152px; }*/
+
+
+.talent {
+	width:750px;
+	margin:0 auto;
+}
+.talent_one {
+	width:500px;
+	float:right;
+}
+
+.talent_one li {
+	float:left;
+}
+
+.talent_two {
+	width:250px;
+	
+}
+
+@media screen and (max-width:767px) {
+	.talent,
+	.talent_one,
+	.talent_two {
+		width:100%;
+	}
+
+	.talent_one,
+	.talent_one li {
+		float:none;
+	}
+
+
+	.talent_one li {
+		margin:0 auto 10%;
+	}
+
+	#list .inner li > div {
+		margin:0 auto;
+	}
+
+
+
+}
+
+/* ------------------------------------
+ * clearfix
+ * ------------------------------------ */
+
+#list .inner > ul:after {
+    clear: both;
+    display: block;
+    height: 0;
+    line-height: 0;
+    font-size: 0.1em;
+    content: ".";
+    visibility: hidden;
+}

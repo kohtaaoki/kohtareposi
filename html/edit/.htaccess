@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "staff only"
+AuthUserFile "/home/httpd/7th-avenue.co.jp/.htpasswd"
+
+require valid-user

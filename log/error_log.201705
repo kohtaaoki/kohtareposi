@@ -1,0 +1,3 @@
+[Thu May 25 21:24:26 2017] [error] [client 122.216.245.82] File does not exist: /home/httpd/7th-avenue.co.jp/pc/html/img/common/bg_header.jpg, referer: http://7th-avenue.m-up.com/css/base.css
+[Thu May 25 21:24:57 2017] [error] [client 122.216.245.82] File does not exist: /home/httpd/7th-avenue.co.jp/pc/html/img/common/bg_header.jpg, referer: http://7th-avenue.m-up.com/css/base.css
+[Thu May 25 21:25:08 2017] [error] [client 122.216.245.82] File does not exist: /home/httpd/7th-avenue.co.jp/pc/html/img/common/bg_header.jpg, referer: http://7th-avenue.m-up.com/css/base.css
